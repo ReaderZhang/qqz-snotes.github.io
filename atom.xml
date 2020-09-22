@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qqz-snotes.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-22T04:38:55.326Z</updated>
+    <updated>2020-09-22T04:43:31.325Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://qqz-snotes.github.io"/>
     <link rel="self" href="https://qqz-snotes.github.io/atom.xml"/>
@@ -16,10 +16,11 @@
         <link href="https://qqz-snotes.github.io/post/docker-xue-xi-zhi-lu-yi/">
         </link>
         <updated>2020-09-21T13:57:26.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="docker最近是一个很火的东西我最近也在学习docker-docker是一个开源的应用容器引擎通过虚拟化让环境变得互相独立-与之相比较的有k8smesos等等-就拿最近比较火的k8s来比较-以我所查的资料中他们俩最大的区别就是k8s是基于容器的集群管理平台而docker则是虚拟化了环境没有做到集群的效果-由于主要是讲解docker所以k8s就不提了-docker核心的三个词是build-ship-and-run-这三个词可以概括docker是一个非常简易的东西-在我没学习docker之前一直都是在linux下jdk8mysql之类的还要去手动配置收到网速的制裁经过今天的学习docker之后就感觉配置环境十分方便-那么接下来进入主题">Docker最近是一个很火的东西，我最近也在学习Docker。Docker是一个开源的应用容器引擎，通过虚拟化让环境变得互相独立。与之相比较的有K8S，Mesos等等。就拿最近比较火的K8S来比较。以我所查的资料中他们俩最大的区别就是K8S是基于容器的<strong>集群</strong>管理平台，而docker则是虚拟化了环境，没有做到集群的效果。由于主要是讲解Docker，所以K8S就不提了。Docker核心的三个词是<strong>Build, Ship and Run</strong>。这三个词可以概括Docker是一个非常简易的东西。在我没学习Docker之前，一直都是在linux下JDK8,mysql之类的，还要去手动配置，收到网速的制裁，经过今天的学习Docker之后，就感觉配置环境十分方便。那么接下来进入主题。</h1>
-<p>由于我用的是centOS7,所以此处仅提供centOS7的安装方法，7及以下的可以去参考网上的教程。首先要</p>
+        <content type="html"><![CDATA[<p>Docker最近是一个很火的东西，我最近也在学习Docker。Docker是一个开源的应用容器引擎，通过虚拟化让环境变得互相独立。与之相比较的有K8S，Mesos等等。就拿最近比较火的K8S来比较。以我所查的资料中他们俩最大的区别就是K8S是基于容器的<strong>集群</strong>管理平台，而docker则是虚拟化了环境，没有做到集群的效果。由于主要是讲解Docker，所以K8S就不提了。Docker核心的三个词是<strong>Build, Ship and Run</strong>。这三个词可以概括Docker是一个非常简易的东西。在我没学习Docker之前，一直都是在linux下JDK8,mysql之类的，还要去手动配置，收到网速的制裁，经过今天的学习Docker之后，就感觉配置环境十分方便。那么接下来进入主题。</p>
+<hr>
+<p>由于我用的是centOS7,所以此处仅提供centOS7的安装方法，7及以下的可以去参考网上的教程。</p>
 <ul>
-<li>确定你是centOS7通过uname -r指令可以得到系统的版本 <img src="https://qqz-snotes.github.io/post-images/1600697990080.png" alt="" loading="lazy"></li>
+<li>首先要确定你是centOS7通过uname -r指令可以得到系统的版本 <img src="https://qqz-snotes.github.io/post-images/1600697990080.png" alt="" loading="lazy"></li>
 <li>安装所需要的软件包yum install -y yum-utils device-mapper-persistent-data lvm2</li>
 <li>yum -config-manager -add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo设置阿里云镜像仓库</li>
 <li>更新yum软件包索引 yum makecache fast</li>
