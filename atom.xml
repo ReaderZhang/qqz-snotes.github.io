@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://qqz-snotes.github.io</id>
+    <title>Gridea</title>
+    <updated>2020-09-22T04:38:55.326Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://qqz-snotes.github.io"/>
+    <link rel="self" href="https://qqz-snotes.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://qqz-snotes.github.io/images/avatar.png</logo>
+    <icon>https://qqz-snotes.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[docker学习之路(一)]]></title>
+        <id>https://qqz-snotes.github.io/post/docker-xue-xi-zhi-lu-yi/</id>
+        <link href="https://qqz-snotes.github.io/post/docker-xue-xi-zhi-lu-yi/">
+        </link>
+        <updated>2020-09-21T13:57:26.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="docker最近是一个很火的东西我最近也在学习docker-docker是一个开源的应用容器引擎通过虚拟化让环境变得互相独立-与之相比较的有k8smesos等等-就拿最近比较火的k8s来比较-以我所查的资料中他们俩最大的区别就是k8s是基于容器的集群管理平台而docker则是虚拟化了环境没有做到集群的效果-由于主要是讲解docker所以k8s就不提了-docker核心的三个词是build-ship-and-run-这三个词可以概括docker是一个非常简易的东西-在我没学习docker之前一直都是在linux下jdk8mysql之类的还要去手动配置收到网速的制裁经过今天的学习docker之后就感觉配置环境十分方便-那么接下来进入主题">Docker最近是一个很火的东西，我最近也在学习Docker。Docker是一个开源的应用容器引擎，通过虚拟化让环境变得互相独立。与之相比较的有K8S，Mesos等等。就拿最近比较火的K8S来比较。以我所查的资料中他们俩最大的区别就是K8S是基于容器的<strong>集群</strong>管理平台，而docker则是虚拟化了环境，没有做到集群的效果。由于主要是讲解Docker，所以K8S就不提了。Docker核心的三个词是<strong>Build, Ship and Run</strong>。这三个词可以概括Docker是一个非常简易的东西。在我没学习Docker之前，一直都是在linux下JDK8,mysql之类的，还要去手动配置，收到网速的制裁，经过今天的学习Docker之后，就感觉配置环境十分方便。那么接下来进入主题。</h1>
+<p>由于我用的是centOS7,所以此处仅提供centOS7的安装方法，7及以下的可以去参考网上的教程。首先要</p>
+<ul>
+<li>确定你是centOS7通过uname -r指令可以得到系统的版本 <img src="https://qqz-snotes.github.io/post-images/1600697990080.png" alt="" loading="lazy"></li>
+<li>安装所需要的软件包yum install -y yum-utils device-mapper-persistent-data lvm2</li>
+<li>yum -config-manager -add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo设置阿里云镜像仓库</li>
+<li>更新yum软件包索引 yum makecache fast</li>
+<li>安装docker ce yum -y install docker-ce</li>
+<li>启动docker systemctl start docker</li>
+<li>通过docker version查看命令，然后通过拉取hello world镜像，docker pull hello-world<img src="https://qqz-snotes.github.io/post-images/1600698464343.png" alt="" loading="lazy">然后就会返回一个helloworld给用户，这就说明docker已经安装完了。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://qqz-snotes.github.io/post/hello-gridea/</id>
+        <link href="https://qqz-snotes.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
